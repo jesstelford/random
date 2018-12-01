@@ -1,1 +1,1 @@
-module.exports = (req, res) => { res.json({ random: Math.random() }) };
+module.exports = (req, res) => { res.end('Hello world') };
