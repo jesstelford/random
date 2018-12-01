@@ -1,3 +1,4 @@
 module.exports = (req, res) => {
-  res.json({ random: Math.random() });
+  res.setHeader('Content-Type', 'application/json');
+  res.end(JSON.stringify({ random: Math.random() }));
 };
